@@ -1,0 +1,203 @@
+
+/************************************************
+ * GENERAL
+ ************************************************
+ */
+
+/* Form */
+.amy-testimonials-form  {
+	margin-bottom: 30px;
+}
+
+.amy-testimonials-form.form-popup-left {
+	text-align: left;
+}
+
+.amy-testimonials-form.form-popup-right {
+	text-align: right;
+}
+
+.amy-rating > p {
+	margin-bottom: 10px;
+}
+
+.amy-rating > p > label {
+	top: -15px;
+	position: relative;
+}
+
+#amy-testimonial-popup {
+	display: none;
+}
+
+.amy-testimonial-fancybox {
+	border-radius: 25px;
+	padding: 10px 40px;
+	text-transform: uppercase;
+}
+
+.amy-testimonials.list {
+
+}
+
+.amy-testimonials {
+	margin-bottom: 30px;
+}
+
+.amy-testimonials .amy-item {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.amy-testimonials .amy-testimonial-name {
+	padding-top: 5px;
+}
+
+.amy-testimonials .amy-testimonial-avatar img {
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+}
+
+.amy-testimonials .amy-testimonial-left.left {
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+.amy-testimonials .amy-testimonial-right.left {
+	margin-left: 120px;
+}
+
+.amy-testimonials .amy-testimonial-left.right {
+	width: 100px;
+	float: right;
+	text-align: center;
+}
+
+.amy-testimonials .amy-testimonial-right.right {
+	margin-right: 120px;
+}
+
+.amy-testimonials .amy-testimonial-left.top {
+
+}
+
+.amy-testimonials .bottom .amy-testimonial-avatar,
+.amy-testimonials .top .amy-testimonial-avatar {
+	float: left;
+}
+
+.amy-testimonials .top .amy-testimonial-user,
+.amy-testimonials .bottom .amy-testimonial-user{
+	margin-left: 120px;
+}
+
+.amy-testimonials .bottom .amy-testimonial-info span,
+.amy-testimonials .top .amy-testimonial-info span {
+	margin-right: 20px;
+	position: relative;
+}
+
+.amy-testimonials .bottom .amy-testimonial-info span:after,
+.amy-testimonials .top .amy-testimonial-info span:after {
+	color: #666;
+	content: "-";
+	display: block;
+	font-size: 16px;
+	position: absolute;
+	right: -15px;
+	top: -2px;
+}
+
+.amy-testimonials .bottom .amy-testimonial-info span:last-child:after,
+.amy-testimonials .top .amy-testimonial-info span:last-child:after {
+	content: ""
+}
+
+.amy-testimonials .amy-testimonial-right.top {
+	clear: both;
+	padding-top: 15px;
+}
+
+.amy-testimonials .amy-testimonial-left.bottom {
+	padding-top: 15px;
+}
+
+.amy-testimonials .amy-testimonial-right.bottom {
+
+}
+
+.amy-testimonials .slick-dots li {
+	margin: 0;
+}
+
+.amy-testimonials .slick-dots li button::before {
+	font-size: 30px;
+}
+
+/************************************************
+ * RATE STAR
+ ************************************************
+ */
+.star-cb-group {
+	/* remove inline-block whitespace */
+	font-size: 0;
+	/* flip the order so we can use the + and ~ combinators */
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	/* the hidden clearer */
+}
+
+.star-cb-group * {
+	font-size: 23px;
+}
+
+.star-cb-group > input {
+	display: none;
+}
+
+.star-cb-group > input + label {
+	/* only enough room for the star */
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 9999px;
+	width: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.star-cb-group > input + label:before {
+	display: inline-block;
+	text-indent: -9999px;
+	content: "☆";
+	color: #888;
+}
+
+.star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+	content: "★";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
+
+.star-cb-group > .star-cb-clear + label {
+	text-indent: -9999px;
+	width: .5em;
+	margin-left: -.5em;
+}
+
+.star-cb-group > .star-cb-clear + label:before {
+	width: .5em;
+}
+
+.star-cb-group:hover > input + label:before {
+	content: "☆";
+	color: #888;
+	text-shadow: none;
+}
+
+.star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+	content: "★";
+	color: #e52;
+	text-shadow: 0 0 1px #333;
+}
